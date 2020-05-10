@@ -152,27 +152,61 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-hexo发布第一篇文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-hexo部署第一篇博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/10/hexo%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">hexo发布第一篇文章</a>
+      <a class="article-title" href="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">hexo部署第一篇博客</a>
     </h1>
   
 
         
-        <a href="/2020/05/10/hexo%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2020-05-10T13:08:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-10</time>
+        <a href="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
+  	<time datetime="2020-05-08T10:31:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-08</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>第一章：<br>windows10环境下</p>
+<p>1：在git官网和nodejs官网将git和nodejs下载下来<br>（git官网：<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a> 安装步骤blog.csdn.net/qq_32786873/article/details/80570783）<br>（nodejs官网：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a>  注：选择LTS版本安装，直接全部点击下一步就行）</p>
+<p>2：win10搭建个人博客网的超级详细教程：<a href="https://www.jianshu.com/p/a39573555039（仅供参考）" target="_blank" rel="noopener">https://www.jianshu.com/p/a39573555039（仅供参考）</a></p>
+<p>将git和nodejs安装好以后<br>打开cmd<br>输入 node -v  (检查版本)<br>输入npm -v (检查版本）<br>输入 git –version  （检查git版本，目的是为了看有没有安装成功git）<br><img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/1.png" alt></p>
+<p>出现版本号即安装成功</p>
+<p>3：安装hexo<br>在cmd下输入 npm install hexo-cli –g  回车出现如下<br> <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/2.jpg" alt><br>Hexo 安装成功  检查是否成功用 hexo –v<br> <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/3.png" alt><br>表明安装成功！</p>
+<hr>
+<p>4：在cmd指向的目录里面新建文件夹来做搭建博客的测试文件夹<br>如此处cmd指向的目录是C:\User\PC  加载吃文件夹下新建名为blog的文件夹（用此方法建不用输入命令）<br> <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/4.png" alt></p>
+<p>4.1：建好文件夹后在cmd里面输入cd  blog 进入blog目录底下<br>4.2：在blog目录底下输入  hexo hnit 用hexo生成博客<br>   注：此处可能在电脑自带的cmd底下生成有可能出错 所以建议打开之前装好的git cmd里面  cd blog 后 hexo hnit<br> <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/5.png" alt></p>
+<p>即如下：<br> <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/6.png" alt><br>出现上述即博客生成成功！端口号为4000</p>
+<p>4.3：打开浏览器在地址栏输入<a href="http://localhost:4000/出现：" target="_blank" rel="noopener">http://localhost:4000/出现：</a><br> <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/7.png" alt><br>博客生成成功！<br>5：回到本机cmd (当前的目录是在blog下的)<br>5.1：用命令生成第一个博客内容<br>输入：Hexo n  “我的第一篇博客文章”<br> <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/8.png" alt><br>成功!</p>
+<p>5.2:查看博客内容：<br>输入：dir<br> <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/9.png" alt><br>表示博客建好有内容</p>
+<p>5.3：输入 ：cd source/_posts/进入到这个目录底下 再dir /-s 查看博客<br> <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/10.png" alt><br><img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/11.png" alt></p>
+<p>查看成功 ！</p>
+<p>6：向空的博客里面写入内容(这里用的记事本打开的方式写入)<br> <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/12.png" alt></p>
+<p>6.1：在记事本里面写好需要的内容<br> <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/13.png" alt></p>
+<p>6.2：退回到blog目录底下<br><img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/14.png" alt><br>6.3：清除一下hexo<br>  <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/15.png" alt><br>6.4:重新生成hexo<br>   <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/16.png" alt></p>
+<p>6.5:再次启动hexo<br>   <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/17.png" alt></p>
+<p>6.6：在浏览器刷新之前的<a href="http://localhost:4000得到：">http://localhost:4000得到：</a></p>
+<p>  <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/18.png" alt></p>
+<p>— 第二章：<br>将博客网址部署在github上</p>
+<p>此处win10系统需要在git bash上配置git<br>打开gitbash 输入<br>   <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/19.png" alt><br> 在github官网<a href="https://github.com上注册账号（此处不详细说明注册步骤自行百度）" target="_blank" rel="noopener">https://github.com上注册账号（此处不详细说明注册步骤自行百度）</a><br>注册成功后new一个仓库出来<br>  <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/20.png" alt><br>给仓库取名：注意 前面的必须与你的用户名保持一致（标黄色部分）后面就命名自己喜欢的此处用的是yangyuer-ui.github.io</p>
+<p>  <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/21.png" alt></p>
+<p>在上述的gitbash里面生成了秘钥（此处可百度搜索配置创建过程）<br>可以在文件夹C:\users\pc.ssh里面找到id_rsa.pub<br>用记事本打开改文件并复制里面的内容<br>   <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/22.png" alt></p>
+<p>打开github<br>   <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/23.png" alt><br>点击setting<br>   <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/24.png" alt><br>创建秘钥<br>   <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/25.png" alt></p>
+<p>将复制的id_rsa,pub里面的内容粘贴到，title可以随填<br>   <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/26.png" alt><br>回到cmd当中<br>加载hexo   出现如下界面即创建成功</p>
+<p>  <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/27.png" alt><br>等待以后 会弹出一个登录的提示窗口 或者在cmd里面提示输入密码<br>将github的邮箱和密码输入进去即可</p>
+<p>Cmd会提示成功的消息<br>  <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/28.png" alt><br>然后输入 hexo clean 清空一下<br>再 hexo g生成一下<br>再 hexo s启动一下服务<br>   <img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/29.png" alt><br>成功</p>
+<hr>
+<p>最后。刷新本地的localhost:4000<br>显示的内容是博客内容</p>
+<p>将浏览器的localhost:4000改为<a href="https://yangyuer-ui.github.io/" target="_blank" rel="noopener">https://yangyuer-ui.github.io/</a><br>注意  此处的吃出的地址为之前新建仓库时候的仓库名</p>
+<p>这时候我们就将hexo部署到了github上面  其他人就可以通过这个浏览器的地址来访问博客了</p>
+<p>下面是改变博客的样式：没有写完全</p>
+<hr>
+
       
 
       
@@ -184,7 +218,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/10/hexo%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
         </p>
       
 
@@ -214,19 +248,19 @@
 
 
   
-    <article id="post-hexo部署第一篇博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Windows下用hexo部署第一篇博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">hexo部署第一篇博客</a>
+      <a class="article-title" href="/2020/05/08/Windows%E4%B8%8B%E7%94%A8hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">hexo部署第一篇博客</a>
     </h1>
   
 
         
-        <a href="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
+        <a href="/2020/05/08/Windows%E4%B8%8B%E7%94%A8hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
   	<time datetime="2020-05-08T10:31:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-08</time>
 </a>
         
@@ -234,7 +268,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>第一章：<br><img src="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/2.jpg" alt="发现问题的图片"><br>发现问题的所在是的深V是</p>
+        <p>第一章：<br><img src="/2020/05/08/Windows%E4%B8%8B%E7%94%A8hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/2.jpg" alt="发现问题的图片"><br>发现问题的所在是的深V是</p>
 <hr>
 
       
@@ -248,7 +282,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/08/Windows%E4%B8%8B%E7%94%A8hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
         </p>
       
 
