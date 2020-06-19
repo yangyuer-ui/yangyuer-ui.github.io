@@ -176,7 +176,15 @@
 <h4>如果报出npm不是内部命令的话，证明没有安装node.js需要在nodejs的官网去下载它</h4>
 <h4>用vue -V查看vue的版本时报错，此时要注意后面的V是大写</h4>
 <h4>如果错误的提示为 ERR：path：'某个文件的路径'，说明在安装这个脚手架之前，有其他跟这个脚手架有关的东西被安装了；只需要将path下面指定的文件删掉重新安装即可</h4>
-
+<h4>例如以下错误</h4>
+![图二ww](/vueImg/1.png)
+<h4>解决方法</h4><p>用管理员身份打开cmd，输入命令npm clean cache –force</p>
+![图二ww](/vueImg/2.png)
+<h4>清除缓存就是讲文件夹里的东西删掉，所以也可以通过删除文件夹的方式来清除</h4>
+![图二ww](/vueImg/3.png)
+<h4>在C:\Users\PC\AppData\Roaming里面删除npm-cache这个文件夹</h4>
+<h4>最后一步。将vscode以管理员身份运行，在vscode的全局命令里面再次npm clean cache –force清除缓存</h4>
+![图二ww](/vueImg/4.png)
       
 
       
