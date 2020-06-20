@@ -6,22 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>关于MVC的json数据格式和视图之间的转换 | Hexo</title>
+  <title>vue脚手架安装踩坑 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="问题的发现的限额为范围">
+  <meta name="description" content="全局模式下npm install -g @vue&#x2F;cli抛错 可能出现的错误 如果报出npm不是内部命令的话，证明没有安装node.js需要在nodejs的官网去下载它 用vue -V查看vue的版本时报错，此时要注意后面的V是大写 如果错误的提示为 ERR：path：&#39;某个文件的路径&#39;，说明在安装这个脚手架之前，有其他跟这个脚手架有关的东西被安装了；只需要将path下面指定的文件删掉重新安装即可">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于MVC的json数据格式和视图之间的转换">
-<meta property="og:url" content="http://yoursite.com/2020/05/07/%E5%85%B3%E4%BA%8EMVC%E7%9A%84json%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%92%8C%E8%A7%86%E5%9B%BE%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/index.html">
+<meta property="og:title" content="vue脚手架安装踩坑">
+<meta property="og:url" content="http://yoursite.com/2020/06/20/vue%E8%84%9A%E6%89%8B%E6%9E%B6%E5%AE%89%E8%A3%85%E8%B8%A9%E5%9D%91/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="问题的发现的限额为范围">
-<meta property="og:image" content="http://yoursite.com/2020/05/07/%E5%85%B3%E4%BA%8EMVC%E7%9A%84json%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%92%8C%E8%A7%86%E5%9B%BE%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/1.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/07/%E5%85%B3%E4%BA%8EMVC%E7%9A%84json%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%92%8C%E8%A7%86%E5%9B%BE%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/3.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/07/%E5%85%B3%E4%BA%8EMVC%E7%9A%84json%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%92%8C%E8%A7%86%E5%9B%BE%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/2.png">
-<meta property="article:published_time" content="2020-05-07T14:44:22.000Z">
-<meta property="article:modified_time" content="2020-05-30T08:27:03.085Z">
+<meta property="og:description" content="全局模式下npm install -g @vue&#x2F;cli抛错 可能出现的错误 如果报出npm不是内部命令的话，证明没有安装node.js需要在nodejs的官网去下载它 用vue -V查看vue的版本时报错，此时要注意后面的V是大写 如果错误的提示为 ERR：path：&#39;某个文件的路径&#39;，说明在安装这个脚手架之前，有其他跟这个脚手架有关的东西被安装了；只需要将path下面指定的文件删掉重新安装即可">
+<meta property="article:published_time" content="2020-06-20T07:27:15.000Z">
+<meta property="article:modified_time" content="2020-06-20T07:29:24.896Z">
 <meta property="article:author" content="yangyuer">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020/05/07/%E5%85%B3%E4%BA%8EMVC%E7%9A%84json%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%92%8C%E8%A7%86%E5%9B%BE%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/1.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -157,33 +153,41 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-关于MVC的json数据格式和视图之间的转换" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-vue脚手架安装踩坑" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      关于MVC的json数据格式和视图之间的转换
+      vue脚手架安装踩坑
     </h1>
   
 
         
-        <a href="/2020/05/07/%E5%85%B3%E4%BA%8EMVC%E7%9A%84json%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%92%8C%E8%A7%86%E5%9B%BE%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/" class="archive-article-date">
-  	<time datetime="2020-05-07T14:44:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-07</time>
+        <a href="/2020/06/20/vue%E8%84%9A%E6%89%8B%E6%9E%B6%E5%AE%89%E8%A3%85%E8%B8%A9%E5%9D%91/" class="archive-article-date">
+  	<time datetime="2020-06-20T07:27:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-20</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>问题的发现的限额为范围<br><img src="/2020/05/07/%E5%85%B3%E4%BA%8EMVC%E7%9A%84json%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%92%8C%E8%A7%86%E5%9B%BE%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/1.png" alt="图一ww"></p>
+        <h2>全局模式下npm install -g @vue/cli抛错</h2>
+<h3>可能出现的错误</h3>
+<h4>如果报出npm不是内部命令的话，证明没有安装node.js需要在nodejs的官网去下载它</h4>
+<h4>用vue -V查看vue的版本时报错，此时要注意后面的V是大写</h4>
+<h4>如果错误的提示为 ERR：path：'某个文件的路径'，说明在安装这个脚手架之前，有其他跟这个脚手架有关的东西被安装了；只需要将path下面指定的文件删掉重新安装即可</h4>
+<h4>例如以下错误</h4>
 <a id="more"></a>
-
-<p>在GetData上点击右键添加视图后，虽然cshtml视图网页里面写了各种样式但是现实的依然是一串原生的json数据<br><img src="/2020/05/07/%E5%85%B3%E4%BA%8EMVC%E7%9A%84json%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%92%8C%E8%A7%86%E5%9B%BE%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/3.png" alt="图二ww"></p>
-<hr>
-<p>问题的解决<br><img src="/2020/05/07/%E5%85%B3%E4%BA%8EMVC%E7%9A%84json%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%92%8C%E8%A7%86%E5%9B%BE%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/2.png" alt="图三"><br>Jsonresult类型的方法直接生成视图的时候不会出错；但是所生成的视图里的数据不能进行其他处理<br>所以需要在控制器里面在见一个空视图，用当json数据和视图之间的载体<br>将json数据放在这个视图里面进行处理</p>
-
+![图三](./vue脚手架安装踩坑/1.png)
+<h4>解决方法</h4><p>用管理员身份打开cmd，输入命令npm clean cache –force</p>
+![图三](./vue脚手架安装踩坑/2.png)
+<h4>清除缓存就是讲文件夹里的东西删掉，所以也可以通过删除文件夹的方式来清除</h4>
+![图三](./vue脚手架安装踩坑/3.png)
+在C:\Users\PC\AppData\Roaming里面删除npm-cache这个文件夹
+<h4>最后一步。将vscode以管理员身份运行，在vscode的全局命令里面再次npm clean cache –force清除缓存</h4>
+![图三](./vue脚手架安装踩坑/4.png)
       
 
       
@@ -267,7 +271,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/05/07/%E5%85%B3%E4%BA%8EMVC%E7%9A%84json%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F%E5%92%8C%E8%A7%86%E5%9B%BE%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/06/20/vue%E8%84%9A%E6%89%8B%E6%9E%B6%E5%AE%89%E8%A3%85%E8%B8%A9%E5%9D%91/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -281,18 +285,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/05/08/hexo%E9%83%A8%E7%BD%B2%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          hexo部署第一篇博客
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/04/16/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">我的第一篇博客文章</div>
+    <a href="/2020/06/19/vue%E8%B7%AF%E7%94%B1%E7%9A%84%E8%B8%A9%E5%9D%91/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">vue路由的踩坑</div>
       <i class="icon-circle-right"></i>
     </a>
   
